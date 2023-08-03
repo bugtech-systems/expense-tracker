@@ -1,0 +1,27 @@
+//HOME
+export const SET_CASH_LIST = 'SET_CASH_LIST';
+export const CLEAR_CASH_LIST = 'CLEAR_CASH_LIST';
+
+export const SET_CHART_DATA = 'SET_CHART_DATA';
+export const CLEAR_CHART_DATA = 'CLEAR_CHART_DATA';
+
+
+
+
+
+//EXPENSES
+export const SET_EXPENSES_LIST = 'SET_EXPENSES_LIST';
+export const CLEAR_EXPENSES_LIST = 'CLEAR_EXPENSES_LIST';
+
+export const SET_PIECHART_DATA = 'SET_PIECHART_DATA';
+export const CLEAR_PIECHART_DATA = 'CLEAR_PIECHART_DATA';
+
+
+
+//UI
+export const SET_LOADING = 'SET_LOADING';
+export const STOP_LOADING = 'STOP_LOADING';
+
+
+export const SET_ERROR = 'SET_ERROR';
+export const CLEAR_ERROR = 'CLEAR_ERROR';
