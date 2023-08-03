@@ -42,7 +42,7 @@ const RootNavigator = (() => {
     <Stack.Navigator
     >
       <Stack.Screen name="Root" component={BottomTabNavigator} options={({navigation}) => ({ headerShown: false })} />
-    
+     
       <Stack.Screen name="Category" component={AllCategoryScreen} 
       options={({ navigation, route }) => ({ 
         headerBackVisible: false,
