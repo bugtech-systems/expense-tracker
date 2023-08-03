@@ -10,7 +10,7 @@ import LoadingComponent from '../components/UI/loading';
 const ListHeader = () => (
   <>
     <View style={styles.titleWrapper}>
-        <Text style={styles.largeTitle}>Top Spending Categories</Text>
+        <Text style={styles.largeTitle}>All Spending Categories</Text>
       </View>
     <View style={styles.divider} />
   </>

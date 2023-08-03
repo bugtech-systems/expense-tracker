@@ -186,7 +186,7 @@ const Expenses = ({navigation}) => {
                       renderItem={({item}) => {
                         return (
                           <TouchableOpacity
-                          onPress={() => setSelectCategoryByName(item)}
+                          onPress={() => setSelectCategoryByName(item.name)}
                           style={{paddingLeft: SIZES.base, flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
                             <View
                                 style={{
@@ -199,7 +199,7 @@ const Expenses = ({navigation}) => {
                                 }}                            
                             />
                             
-                            <Text style={[{...FONTS.body3}, selectedCategory.name == item.name ?  { color: COLORS.primary} : null]}>{item.name}</Text>
+                            <Text style={[{...FONTS.body3}, selectedCategory == item.name ?  { color: COLORS.primary} : null]}>{item.name}</Text>
                           </TouchableOpacity>
                         )
                       }}
@@ -216,7 +216,9 @@ const Expenses = ({navigation}) => {
            {loading ?
     <LoadingComponent/> 
     :   
-    <ScrollView>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+    >
           <View style={styles.chartContainer}>
                         {renderChart()}
                         {/* {renderExpenseSummary()} */}
